@@ -1,0 +1,759 @@
+https://www.youtube.com/watch?v=xBChHYeV138&list=PLuHgQVnccGMDuVdsGtH1_452MtRxALb_7&index=5
+
+
+===> inmokang11 login : keycloak x  / 외부 o
+
+
+2025-05-31 00:15:09,840 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) new JtaTransactionWrapper. Was existing transaction suspended: false Request Context: HTTP GET /realms/ROLE_TEST/protocol/openid-connect/auth
+2025-05-31 00:15:09,842 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-8) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2025-05-31 00:15:09,842 DEBUG [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl] (executor-thread-8) Hibernate RegisteredSynchronization successfully registered with JTA platform
+2025-05-31 00:15:09,842 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:09,842 DEBUG [org.hibernate.SQL] (executor-thread-8) select ce1_0.ID from CLIENT ce1_0 where ce1_0.CLIENT_ID=? and ce1_0.REALM_ID=?
+2025-05-31 00:15:09,843 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: set autocommit=0
+2025-05-31 00:15:09,843 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) System variable change:  autocommit = OFF
+2025-05-31 00:15:09,843 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select ce1_0.ID from CLIENT ce1_0 where ce1_0.CLIENT_ID=? and ce1_0.REALM_ID=?
+2025-05-31 00:15:09,845 DEBUG [org.keycloak.protocol.oidc.endpoints.request.AuthzEndpointRequestParser] (executor-thread-8) The additional OIDC param 'scope' is well known. Continue with the other additional parameters.
+2025-05-31 00:15:09,845 DEBUG [org.keycloak.protocol.oidc.endpoints.request.AuthzEndpointRequestParser] (executor-thread-8) The additional OIDC param 'response_type' is well known. Continue with the other additional parameters.
+2025-05-31 00:15:09,845 DEBUG [org.keycloak.protocol.oidc.endpoints.request.AuthzEndpointRequestParser] (executor-thread-8) The additional OIDC param 'redirect_uri' is well known. Continue with the other additional parameters.
+2025-05-31 00:15:09,845 DEBUG [org.keycloak.protocol.oidc.endpoints.request.AuthzEndpointRequestParser] (executor-thread-8) The additional OIDC param 'state' is well known. Continue with the other additional parameters.
+2025-05-31 00:15:09,845 DEBUG [org.keycloak.protocol.oidc.endpoints.request.AuthzEndpointRequestParser] (executor-thread-8) The additional OIDC param 'nonce' is well known. Continue with the other additional parameters.
+2025-05-31 00:15:09,845 DEBUG [org.keycloak.protocol.oidc.endpoints.request.AuthzEndpointRequestParser] (executor-thread-8) The additional OIDC param 'client_id' is well known. Continue with the other additional parameters.
+2025-05-31 00:15:09,846 DEBUG [org.hibernate.orm.loader.multi] (executor-thread-8) Batch fetching entity `org.keycloak.models.jpa.entities.RealmEntity#d5779a08-07ea-4ad1-885f-acd4b3643a7f`
+2025-05-31 00:15:09,846 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-31 00:15:09,846 DEBUG [org.hibernate.SQL] (executor-thread-8) select re1_0.ID,re1_0.ACCESS_CODE_LIFESPAN,re1_0.LOGIN_LIFESPAN,re1_0.USER_ACTION_LIFESPAN,re1_0.ACCESS_TOKEN_LIFESPAN,re1_0.ACCESS_TOKEN_LIFE_IMPLICIT,re1_0.ACCOUNT_THEME,re1_0.ADMIN_EVENTS_DETAILS_ENABLED,re1_0.ADMIN_EVENTS_ENABLED,re1_0.ADMIN_THEME,re1_0.ALLOW_USER_MANAGED_ACCESS,re1_0.BROWSER_FLOW,re1_0.CLIENT_AUTH_FLOW,re1_0.DEFAULT_LOCALE,re1_0.DEFAULT_ROLE,re1_0.DIRECT_GRANT_FLOW,re1_0.DOCKER_AUTH_FLOW,re1_0.DUPLICATE_EMAILS_ALLOWED,re1_0.EDIT_USERNAME_ALLOWED,re1_0.EMAIL_THEME,re1_0.ENABLED,re1_0.EVENTS_ENABLED,re1_0.EVENTS_EXPIRATION,re1_0.INTERNATIONALIZATION_ENABLED,re1_0.LOGIN_THEME,re1_0.LOGIN_WITH_EMAIL_ALLOWED,re1_0.MASTER_ADMIN_CLIENT,re1_0.NAME,re1_0.NOT_BEFORE,re1_0.OFFLINE_SESSION_IDLE_TIMEOUT,re1_0.OTP_POLICY_ALG,re1_0.OTP_POLICY_DIGITS,re1_0.OTP_POLICY_COUNTER,re1_0.OTP_POLICY_WINDOW,re1_0.OTP_POLICY_PERIOD,re1_0.OTP_POLICY_TYPE,re1_0.PASSWORD_POLICY,re1_0.REFRESH_TOKEN_MAX_REUSE,re1_0.REGISTRATION_ALLOWED,re1_0.REG_EMAIL_AS_USERNAME,re1_0.REGISTRATION_FLOW,re1_0.REMEMBER_ME,re1_0.RESET_CREDENTIALS_FLOW,re1_0.RESET_PASSWORD_ALLOWED,re1_0.REVOKE_REFRESH_TOKEN,re1_0.SSL_REQUIRED,re1_0.SSO_IDLE_TIMEOUT,re1_0.SSO_IDLE_TIMEOUT_REMEMBER_ME,re1_0.SSO_MAX_LIFESPAN,re1_0.SSO_MAX_LIFESPAN_REMEMBER_ME,re1_0.VERIFY_EMAIL,a1_0.REALM_ID,a1_0.NAME,a1_0.VALUE from REALM re1_0 left join REALM_ATTRIBUTE a1_0 on re1_0.ID=a1_0.REALM_ID where re1_0.ID=?
+2025-05-31 00:15:09,846 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select re1_0.ID,re1_0.ACCESS_CODE_LIFESPAN,re1_0.LOGIN_LIFESPAN,re1_0.USER_ACTION_LIFESPAN,re1_0.ACCESS_TOKEN_LIFESPAN,re1_0.ACCESS_TOKEN_LIFE_IMPLICIT,re1_0.ACCOUNT_THEME,re1_0.ADMIN_EVENTS_DETAILS_ENABLED,re1_0.ADMIN_EVENTS_ENABLED,re1_0.ADMIN_THEME,re1_0.ALLOW_USER_MANAGED_ACCESS,re1_0.BROWSER_FLOW,re1_0.CLIENT_AUTH_FLOW,re1_0.DEFAULT_LOCALE,re1_0.DEFAULT_ROLE,re1_0.DIRECT_GRANT_FLOW,re1_0.DOCKER_AUTH_FLOW,re1_0.DUPLICATE_EMAILS_ALLOWED,re1_0.EDIT_USERNAME_ALLOWED,re1_0.EMAIL_THEME,re1_0.ENABLED,re1_0.EVENTS_ENABLED,re1_0.EVENTS_EXPIRATION,re1_0.INTERNATIONALIZATION_ENABLED,re1_0.LOGIN_THEME,re1_0.LOGIN_WITH_EMAIL_ALLOWED,re1_0.MASTER_ADMIN_CLIENT,re1_0.NAME,re1_0.NOT_BEFORE,re1_0.OFFLINE_SESSION_IDLE_TIMEOUT,re1_0.OTP_POLICY_ALG,re1_0.OTP_POLICY_DIGITS,re1_0.OTP_POLICY_COUNTER,re1_0.OTP_POLICY_WINDOW,re1_0.OTP_POLICY_PERIOD,re1_0.OTP_POLICY_TYPE,re1_0.PASSWORD_POLICY,re1_0.REFRESH_TOKEN_MAX_REUSE,re1_0.REGISTRATION_ALLOWED,re1_0.REG_EMAIL_AS_USERNAME,re1_0.REGISTRATION_FLOW,re1_0.REMEMBER_ME,re1_0.RESET_CREDENTIALS_FLOW,re1_0.RESET_PASSWORD_ALLOWED,re1_0.REVOKE_REFRESH_TOKEN,re1_0.SSL_REQUIRED,re1_0.SSO_IDLE_TIMEOUT,re1_0.SSO_IDLE_TIMEOUT_REMEMBER_ME,re1_0.SSO_MAX_LIFESPAN,re1_0.SSO_MAX_LIFESPAN_REMEMBER_ME,re1_0.VERIFY_EMAIL,a1_0.REALM_ID,a1_0.NAME,a1_0.VALUE from REALM re1_0 left join REALM_ATTRIBUTE a1_0 on re1_0.ID=a1_0.REALM_ID where re1_0.ID=?
+2025-05-31 00:15:09,849 DEBUG [org.hibernate.sql.results.internal.ResultsHelper] (executor-thread-8) Collection fully initialized: [org.keycloak.models.jpa.entities.RealmEntity.attributes#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,850 DEBUG [org.keycloak.protocol.oidc.endpoints.AuthorizationEndpointChecker] (executor-thread-8) PKCE non-supporting Client
+2025-05-31 00:15:09,850 DEBUG [org.keycloak.services.managers.AuthenticationManager] (executor-thread-8) Could not find cookie: KEYCLOAK_IDENTITY
+2025-05-31 00:15:09,859 DEBUG [jdk.event.security] (executor-thread-8) X509Certificate: Alg:SHA256WITHRSA, Serial:01:96:3b:66:c3:35, Subject:CN=SSO_TEST2, Issuer:CN=SSO_TEST2, Key type:RSA, Length:2048, Cert Id:215695931, Valid from:4/15/25, 9:40 PM, Valid until:4/15/35, 9:41 PM
+2025-05-31 00:15:09,867 DEBUG [jdk.event.security] (executor-thread-8) X509Certificate: Alg:SHA256WITHRSA, Serial:01:96:3b:66:c3:bb, Subject:CN=SSO_TEST2, Issuer:CN=SSO_TEST2, Key type:RSA, Length:2048, Cert Id:3141159568, Valid from:4/15/25, 9:40 PM, Valid until:4/15/35, 9:41 PM
+2025-05-31 00:15:09,868 DEBUG [org.keycloak.services.managers.AuthenticationSessionManager] (executor-thread-8) Set AUTH_SESSION_ID cookie with value MGI5OGQyYTQtZTQ0MC00MThjLWE2ZDYtN2EyOGEzM2IwZmIyLmFTeFlja3U4aTA5ZnRKcnJfQkR0cmJDM0RjU2hQeWtBNUpadHRDeUswWTlURHZxVDR6bzlQbmtnQVVURHF3TjZSTEtqZkhLQm50Uk1nVFB3RWhUc2tn.c337fd504c59-19130
+2025-05-31 00:15:09,868 DEBUG [org.keycloak.services.managers.AuthenticationSessionManager] (executor-thread-8) Set KC_AUTH_SESSION_HASH cookie with value EXgOxZTZleCA5Q4ITKaERyT5KFhOn3XG3D20PhMzHGY
+2025-05-31 00:15:09,868 DEBUG [org.keycloak.protocol.AuthorizationEndpointBase] (executor-thread-8) Sent request to authz endpoint. Created new root authentication session with ID '0b98d2a4-e440-418c-a6d6-7a28a33b0fb2' . Client: role-test-site2 . New authentication session tab ID: FmtjZ734ndU
+2025-05-31 00:15:09,870 DEBUG [org.keycloak.authentication.AuthenticationProcessor] (executor-thread-8) AUTHENTICATE
+2025-05-31 00:15:09,870 DEBUG [org.keycloak.authentication.AuthenticationProcessor] (executor-thread-8) AUTHENTICATE ONLY
+2025-05-31 00:15:09,870 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) processFlow: browser
+2025-05-31 00:15:09,870 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) check execution: 'auth-cookie', requirement: 'ALTERNATIVE'
+2025-05-31 00:15:09,870 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) authenticator: auth-cookie
+2025-05-31 00:15:09,870 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'browser' for adding executions
+2025-05-31 00:15:09,870 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'Organization' for adding executions
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'forms' for adding executions
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Selections when trying execution 'auth-cookie' : [ authSelection - auth-cookie,  authSelection - identity-provider-redirector,  authSelection - auth-username-password-form]
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) invoke authenticator.authenticate: auth-cookie
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.services.managers.AuthenticationManager] (executor-thread-8) Could not find cookie: KEYCLOAK_IDENTITY
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) authenticator ATTEMPTED: auth-cookie
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) check execution: 'identity-provider-redirector', requirement: 'ALTERNATIVE'
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) authenticator: identity-provider-redirector
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'browser' for adding executions
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'Organization' for adding executions
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'forms' for adding executions
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Selections when trying execution 'identity-provider-redirector' : [ authSelection - identity-provider-redirector,  authSelection - auth-username-password-form]
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) invoke authenticator.authenticate: identity-provider-redirector
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) authenticator ATTEMPTED: identity-provider-redirector
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) check execution: 'Organization flow', requirement: 'ALTERNATIVE'
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) processFlow: Organization
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) Flow 'Organization flow' failed
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) check execution: 'forms flow', requirement: 'ALTERNATIVE'
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) processFlow: forms
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) check execution: 'auth-username-password-form', requirement: 'REQUIRED'
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) authenticator: auth-username-password-form
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'browser' for adding executions
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'Organization' for adding executions
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'forms' for adding executions
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Selections when trying execution 'auth-username-password-form' : [ authSelection - auth-username-password-form]
+2025-05-31 00:15:09,872 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) invoke authenticator.authenticate: auth-username-password-form
+2025-05-31 00:15:09,902 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("template_en_US.ftl"): Not found
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("template_en.ftl"): Not found
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("template.ftl"): Found
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) "template.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/keycloak.v2/login/template.ftl hasn't changed.
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("field_en_US.ftl"): Not found
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("field_en.ftl"): Not found
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("field.ftl"): Found
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) "field.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/keycloak.v2/login/field.ftl hasn't changed.
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("footer_en_US.ftl"): Not found
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("footer_en.ftl"): Not found
+2025-05-31 00:15:09,903 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("footer.ftl"): Found
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) "footer.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/base/login/footer.ftl hasn't changed.
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) "field.ftl"("en_US", UTF-8, parsed) cached copy not yet stale; using cached.
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("buttons_en_US.ftl"): Not found
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("buttons_en.ftl"): Not found
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("buttons.ftl"): Found
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) "buttons.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/keycloak.v2/login/buttons.ftl hasn't changed.
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("social-providers_en_US.ftl"): Not found
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("social-providers_en.ftl"): Not found
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("social-providers.ftl"): Found
+2025-05-31 00:15:09,904 FINE  [freemarker.cache] (executor-thread-8) "social-providers.ftl"("en_US", UTF-8, parsed): using cached since jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/keycloak.v2/login/social-providers.ftl hasn't changed.
+2025-05-31 00:15:09,909 FINE  [freemarker.beans] (executor-thread-8) Key "selectedCredential" was not found on instance of org.keycloak.forms.login.freemarker.model.AuthenticationContextBean. Introspection information for the class is: {getClass=public final native java.lang.Class java.lang.Object.getClass(), getAuthenticationSelections=public java.util.List org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.getAuthenticationSelections(), showResetCredentials=public boolean org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.showResetCredentials(), authenticationSelections=freemarker.ext.beans.FastPropertyDescriptor@ed9286e, java.lang.Object@176d767c={public java.lang.String java.lang.Object.toString()=[Ljava.lang.Class;@10100e1d, public java.lang.String org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.getAttemptedUsername()=[Ljava.lang.Class;@7ad21623, public boolean org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.showTryAnotherWayLink()=[Ljava.lang.Class;@7dd34c3c, public boolean org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.showResetCredentials()=[Ljava.lang.Class;@3a0e91b0, public java.util.List org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.getAuthenticationSelections()=[Ljava.lang.Class;@2a7e000a, public final native java.lang.Class java.lang.Object.getClass()=[Ljava.lang.Class;@40f77868, public native int java.lang.Object.hashCode()=[Ljava.lang.Class;@27226ee6, public boolean org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.showUsername()=[Ljava.lang.Class;@696ff8a3, public boolean java.lang.Object.equals(java.lang.Object)=[Ljava.lang.Class;@334bcbd4}, showUsername=public boolean org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.showUsername(), java.lang.Object@5d958067=freemarker.ext.beans.SimpleMethod@4884d1ed, hashCode=public native int java.lang.Object.hashCode(), equals=public boolean java.lang.Object.equals(java.lang.Object), toString=public java.lang.String java.lang.Object.toString(), showTryAnotherWayLink=public boolean org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.showTryAnotherWayLink(), attemptedUsername=freemarker.ext.beans.FastPropertyDescriptor@7ce5d345, class=freemarker.ext.beans.FastPropertyDescriptor@6ad9969a, getAttemptedUsername=public java.lang.String org.keycloak.forms.login.freemarker.model.AuthenticationContextBean.getAttemptedUsername()}
+2025-05-31 00:15:09,910 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (executor-thread-8) Processing flush-time cascades
+2025-05-31 00:15:09,910 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (executor-thread-8) Dirty checking collections
+2025-05-31 00:15:09,910 DEBUG [org.hibernate.orm.sql.ast.create] (executor-thread-8) Created new SQL alias : ipe1_0
+2025-05-31 00:15:09,910 DEBUG [org.hibernate.orm.sql.ast.create] (executor-thread-8) Registration of TableGroup [StandardTableGroup(org.keycloak.models.jpa.entities.IdentityProviderEntity(10))] with identifierForTableGroup [org.keycloak.models.jpa.entities.IdentityProviderEntity] for NavigablePath [org.keycloak.models.jpa.entities.IdentityProviderEntity]
+2025-05-31 00:15:09,911 DEBUG [org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter] (executor-thread-8) Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@63e52821
+2025-05-31 00:15:09,911 DEBUG [org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter] (executor-thread-8) Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(org.keycloak.models.jpa.entities.IdentityProviderEntity(10).realmId)
+2025-05-31 00:15:09,911 DEBUG [org.hibernate.orm.results.graph.AST] (executor-thread-8) DomainResult Graph:
+ \-EntityResultImpl [org.keycloak.models.jpa.entities.IdentityProviderEntity(10)]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).addReadTokenRoleOnCreate]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).alias]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).authenticateByDefault]
+ |  +-DelayedCollectionFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).config]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).displayName]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).enabled]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).firstBrokerLoginFlowId]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).hideOnLogin]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).linkOnly]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).organizationId]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).postBrokerLoginFlowId]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).providerId]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).realmId]
+ |  +-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).storeToken]
+ |  \-BasicFetch [org.keycloak.models.jpa.entities.IdentityProviderEntity(10).trustEmail]
+
+2025-05-31 00:15:09,911 DEBUG [org.hibernate.orm.sql.ast.tree] (executor-thread-8) SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (ipe1 : org.keycloak.models.jpa.entities.IdentityProviderEntity(10)) {
+          primaryTableReference : IDENTITY_PROVIDER as ipe1_0
+        }
+      }
+    }
+
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Collection found: [org.keycloak.models.jpa.entities.RealmEntity.attributes#d5779a08-07ea-4ad1-885f-acd4b3643a7f], was: [org.keycloak.models.jpa.entities.RealmEntity.attributes#d5779a08-07ea-4ad1-885f-acd4b3643a7f] (initialized)
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.authenticationFlows#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.authenticators#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.components#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.defaultGroupIds#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.enabledEventTypes#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.eventsListeners#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.realmLocalizationTexts#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.requiredActionProviders#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.requiredCredentials#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.smtpConfig#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.supportedLocales#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.userFederationMappers#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.userFederationProviders#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (executor-thread-8) Flushed: 0 insertions, 0 updates, 0 deletions to 64 objects
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (executor-thread-8) Flushed: 0 (re)creations, 0 updates, 0 removals to 14 collections
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) Listing entities:
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=RS256}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=nosniff}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=5}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=SAMEORIGIN}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=60}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=false}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=false}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=keycloak}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value={}}
+2025-05-31 00:15:09,912 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=none}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=0}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=ES256,RS256}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=600}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=poll}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=120}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=0}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=0}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=false}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=43200}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=0}
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) More......
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:09,913 DEBUG [org.hibernate.SQL] (executor-thread-8) select ipe1_0.INTERNAL_ID,ipe1_0.ADD_TOKEN_ROLE,ipe1_0.PROVIDER_ALIAS,ipe1_0.AUTHENTICATE_BY_DEFAULT,ipe1_0.PROVIDER_DISPLAY_NAME,ipe1_0.ENABLED,ipe1_0.FIRST_BROKER_LOGIN_FLOW_ID,ipe1_0.HIDE_ON_LOGIN,ipe1_0.LINK_ONLY,ipe1_0.ORGANIZATION_ID,ipe1_0.POST_BROKER_LOGIN_FLOW_ID,ipe1_0.PROVIDER_ID,ipe1_0.REALM_ID,ipe1_0.STORE_TOKEN,ipe1_0.TRUST_EMAIL from IDENTITY_PROVIDER ipe1_0 where ipe1_0.REALM_ID=? and ipe1_0.ENABLED and not(ipe1_0.LINK_ONLY) and not(ipe1_0.HIDE_ON_LOGIN) and ipe1_0.ORGANIZATION_ID is null order by ipe1_0.PROVIDER_ALIAS
+2025-05-31 00:15:09,913 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select ipe1_0.INTERNAL_ID,ipe1_0.ADD_TOKEN_ROLE,ipe1_0.PROVIDER_ALIAS,ipe1_0.AUTHENTICATE_BY_DEFAULT,ipe1_0.PROVIDER_DISPLAY_NAME,ipe1_0.ENABLED,ipe1_0.FIRST_BROKER_LOGIN_FLOW_ID,ipe1_0.HIDE_ON_LOGIN,ipe1_0.LINK_ONLY,ipe1_0.ORGANIZATION_ID,ipe1_0.POST_BROKER_LOGIN_FLOW_ID,ipe1_0.PROVIDER_ID,ipe1_0.REALM_ID,ipe1_0.STORE_TOKEN,ipe1_0.TRUST_EMAIL from IDENTITY_PROVIDER ipe1_0 where ipe1_0.REALM_ID=? and ipe1_0.ENABLED and not(ipe1_0.LINK_ONLY) and not(ipe1_0.HIDE_ON_LOGIN) and ipe1_0.ORGANIZATION_ID is null order by ipe1_0.PROVIDER_ALIAS
+2025-05-31 00:15:09,914 DEBUG [org.hibernate.orm.results] (executor-thread-8) Initializer list:
+          org.keycloak.models.jpa.entities.IdentityProviderEntity(10).config -> DelayedCollectionInitializer(org.keycloak.models.jpa.entities.IdentityProviderEntity(10).config)@2138345234 (PluralAttribute(org.keycloak.models.jpa.entities.IdentityProviderEntity.config))
+          org.keycloak.models.jpa.entities.IdentityProviderEntity(10) -> EntityJoinedFetchInitializer(org.keycloak.models.jpa.entities.IdentityProviderEntity(10))@1583213016 (SingleTableEntityPersister(org.keycloak.models.jpa.entities.IdentityProviderEntity))
+
+2025-05-31 00:15:09,915 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) JtaTransactionWrapper  commit. Request Context: HTTP GET /realms/ROLE_TEST/protocol/openid-connect/auth
+2025-05-31 00:15:09,915 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (executor-thread-8) Processing flush-time cascades
+2025-05-31 00:15:09,915 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (executor-thread-8) Dirty checking collections
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Collection found: [org.keycloak.models.jpa.entities.RealmEntity.attributes#d5779a08-07ea-4ad1-885f-acd4b3643a7f], was: [org.keycloak.models.jpa.entities.RealmEntity.attributes#d5779a08-07ea-4ad1-885f-acd4b3643a7f] (initialized)
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.authenticationFlows#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.authenticators#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.components#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.defaultGroupIds#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.enabledEventTypes#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.eventsListeners#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.realmLocalizationTexts#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.requiredActionProviders#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.requiredCredentials#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.smtpConfig#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.supportedLocales#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.userFederationMappers#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.engine.internal.Collections] (executor-thread-8) Skipping uninitialized bytecode-lazy collection: [org.keycloak.models.jpa.entities.RealmEntity.userFederationProviders#d5779a08-07ea-4ad1-885f-acd4b3643a7f]
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (executor-thread-8) Flushed: 0 insertions, 0 updates, 0 deletions to 64 objects
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (executor-thread-8) Flushed: 0 (re)creations, 0 updates, 0 removals to 14 collections
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) Listing entities:
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=RS256}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=nosniff}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=5}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=SAMEORIGIN}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=60}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=false}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=false}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=keycloak}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value={}}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=none}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=0}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=ES256,RS256}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=600}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=poll}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=120}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=0}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=0}
+2025-05-31 00:15:09,916 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=false}
+2025-05-31 00:15:09,917 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=43200}
+2025-05-31 00:15:09,917 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=}
+2025-05-31 00:15:09,917 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) org.keycloak.models.jpa.entities.RealmAttributeEntity{value=0}
+2025-05-31 00:15:09,917 DEBUG [org.hibernate.internal.util.EntityPrinter] (executor-thread-8) More......
+2025-05-31 00:15:09,917 DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] (executor-thread-8) On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-31 00:15:09,917 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-8) Initiating JDBC connection release from beforeTransactionCompletion
+2025-05-31 00:15:09,917 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: COMMIT
+2025-05-31 00:15:09,917 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: set autocommit=1
+2025-05-31 00:15:09,917 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) System variable change:  autocommit = ON
+2025-05-31 00:15:09,917 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-8) Initiating JDBC connection release from afterTransaction
+2025-05-31 00:15:09,917 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) JtaTransactionWrapper end. Request Context: HTTP GET /realms/ROLE_TEST/protocol/openid-connect/auth
+2025-05-31 00:15:29,476 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) new JtaTransactionWrapper. Was existing transaction suspended: false Request Context: HTTP POST /realms/ROLE_TEST/login-actions/authenticate
+2025-05-31 00:15:29,479 DEBUG [org.keycloak.services.resources.SessionCodeChecks] (executor-thread-8) Will use client 'role-test-site2' in back-to-application link
+2025-05-31 00:15:29,480 DEBUG [org.keycloak.services.managers.AuthenticationSessionManager] (executor-thread-8) Found AUTH_SESSION_ID cookie with value MGI5OGQyYTQtZTQ0MC00MThjLWE2ZDYtN2EyOGEzM2IwZmIyLmFTeFlja3U4aTA5ZnRKcnJfQkR0cmJDM0RjU2hQeWtBNUpadHRDeUswWTlURHZxVDR6bzlQbmtnQVVURHF3TjZSTEtqZkhLQm50Uk1nVFB3RWhUc2tn.c337fd504c59-19130
+2025-05-31 00:15:29,480 DEBUG [org.keycloak.authentication.AuthenticationProcessor] (executor-thread-8) authenticationAction
+2025-05-31 00:15:29,480 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) processAction: 66cbc529-ac32-4bdf-81e9-f854b3fec761
+2025-05-31 00:15:29,480 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'browser' for adding executions
+2025-05-31 00:15:29,480 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'Organization' for adding executions
+2025-05-31 00:15:29,480 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Going through the flow 'forms' for adding executions
+2025-05-31 00:15:29,481 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-8) Selections when trying execution 'auth-username-password-form' : [ authSelection - auth-username-password-form]
+2025-05-31 00:15:29,481 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) action: auth-username-password-form
+2025-05-31 00:15:29,481 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-8) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2025-05-31 00:15:29,481 DEBUG [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl] (executor-thread-8) Hibernate RegisteredSynchronization successfully registered with JTA platform
+2025-05-31 00:15:29,481 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:29,481 DEBUG [org.hibernate.SQL] (executor-thread-8) select ue1_0.ID,ue1_0.CREATED_TIMESTAMP,ue1_0.EMAIL,ue1_0.EMAIL_CONSTRAINT,ue1_0.EMAIL_VERIFIED,ue1_0.ENABLED,ue1_0.FEDERATION_LINK,ue1_0.FIRST_NAME,ue1_0.LAST_NAME,ue1_0.NOT_BEFORE,ue1_0.REALM_ID,ue1_0.SERVICE_ACCOUNT_CLIENT_LINK,ue1_0.USERNAME from USER_ENTITY ue1_0 where ue1_0.USERNAME=? and ue1_0.REALM_ID=?
+2025-05-31 00:15:29,482 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: set autocommit=0
+2025-05-31 00:15:29,482 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) System variable change:  autocommit = OFF
+2025-05-31 00:15:29,482 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select ue1_0.ID,ue1_0.CREATED_TIMESTAMP,ue1_0.EMAIL,ue1_0.EMAIL_CONSTRAINT,ue1_0.EMAIL_VERIFIED,ue1_0.ENABLED,ue1_0.FEDERATION_LINK,ue1_0.FIRST_NAME,ue1_0.LAST_NAME,ue1_0.NOT_BEFORE,ue1_0.REALM_ID,ue1_0.SERVICE_ACCOUNT_CLIENT_LINK,ue1_0.USERNAME from USER_ENTITY ue1_0 where ue1_0.USERNAME=? and ue1_0.REALM_ID=?
+2025-05-31 00:15:29,490 DEBUG [org.keycloak.executors.DefaultExecutorsProviderFactory] (executor-thread-8) We are not in managed environment. Executor 'java:jboss/ee/concurrency/executor/default' was not available.
+2025-05-31 00:15:29,494 DEBUG [org.keycloak.executors.DefaultExecutorsProviderFactory] (executor-thread-8) Creating pool for task 'storage-provider-threads': min=4, max=64
+2025-05-31 00:15:29,496 DEBUG [com.nwc.MariaDBUserFederationProviderFactory] (executor-thread-8) MariaDBUserFederationProviderFactory: create()...
+2025-05-31 00:15:29,496 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: jdbcUrl=jdbc:mariadb://www.test.com:13306/new_testdb
+2025-05-31 00:15:29,496 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: dbUser==new_test
+2025-05-31 00:15:29,533 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) Database change: is 'new_testdb'
+2025-05-31 00:15:29,533 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),time_zone='+00:00',NAMES utf8mb4
+2025-05-31 00:15:29,537 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) System variable change:  character_set_client = utf8mb4
+2025-05-31 00:15:29,537 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) System variable change:  character_set_connection = utf8mb4
+2025-05-31 00:15:29,537 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) System variable change:  character_set_results = utf8mb4
+2025-05-31 00:15:29,537 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) System variable change:  time_zone = +00:00
+2025-05-31 00:15:29,543 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:15:29,543 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: SELECT username, email, first_name, last_name FROM users WHERE username = ?
+2025-05-31 00:15:29,547 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:15:29,548 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:15:29,548 DEBUG [org.hibernate.orm.query.hql] (executor-thread-8) HQL : select attr from FederatedUserAttributeEntity attr where attr.userId = :userId and attr.realmId=:realmId
+2025-05-31 00:15:29,549 DEBUG [org.hibernate.orm.query.sqm.creation] (executor-thread-8) Applying inferable type to SqmExpression [SqmNamedParameter(userId)] : null -> SqmBasicValuedSimplePath(org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).userId)
+2025-05-31 00:15:29,549 DEBUG [org.hibernate.orm.query.sqm.creation] (executor-thread-8) Applying inferable type to SqmExpression [SqmNamedParameter(realmId)] : null -> SqmBasicValuedSimplePath(org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).realmId)
+2025-05-31 00:15:29,549 DEBUG [org.hibernate.orm.query.sqm.ast] (executor-thread-8) SqmStatement Tree :
+    -> [select]
+      -> [query-spec]
+        -> [select]
+          -> [selection]
+            -> [root] - `org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr)`
+            <- [root] - `org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr)`
+          <- [selection]
+        <- [select]
+        -> [from]
+          -> [root] - `org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr)`
+          <- [root] - `org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr)`
+        <- [from]
+        -> [where]
+          -> [and]
+            -> [EQUAL]
+                -> [basic-path] - `org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).userId`
+                :userId
+            <- [EQUAL]
+            -> [EQUAL]
+                -> [basic-path] - `org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).realmId`
+                :realmId
+            <- [EQUAL]
+          <- [and]
+        <- [where]
+      <- [query-spec]
+    <- [select]
+
+2025-05-31 00:15:29,549 DEBUG [org.hibernate.orm.sql.ast.create] (executor-thread-8) Created new SQL alias : fuae1_0
+2025-05-31 00:15:29,549 DEBUG [org.hibernate.orm.sql.ast.create] (executor-thread-8) Registration of TableGroup [StandardTableGroup(org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr))] with identifierForTableGroup [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity] for NavigablePath [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity]
+2025-05-31 00:15:29,550 DEBUG [org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter] (executor-thread-8) Determining mapping-model type for SqmParameter : SqmNamedParameter(userId)
+2025-05-31 00:15:29,550 DEBUG [org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter] (executor-thread-8) Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).userId)
+2025-05-31 00:15:29,550 DEBUG [org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter] (executor-thread-8) Determining mapping-model type for SqmParameter : SqmNamedParameter(realmId)
+2025-05-31 00:15:29,550 DEBUG [org.hibernate.query.sqm.sql.BaseSqmToSqlAstConverter] (executor-thread-8) Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).realmId)
+2025-05-31 00:15:29,550 DEBUG [org.hibernate.orm.results.graph.AST] (executor-thread-8) DomainResult Graph:
+ \-EntityResultImpl [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr)]
+ |  +-BasicFetch [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).longValue]
+ |  +-BasicFetch [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).longValueHash]
+ |  +-BasicFetch [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).longValueHashLowerCase]
+ |  +-BasicFetch [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).name]
+ |  +-BasicFetch [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).realmId]
+ |  +-BasicFetch [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).storageProviderId]
+ |  +-BasicFetch [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).userId]
+ |  \-BasicFetch [org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr).value]
+
+2025-05-31 00:15:29,550 DEBUG [org.hibernate.orm.sql.ast.tree] (executor-thread-8) SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (fuae1 : org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr)) {
+          primaryTableReference : FED_USER_ATTRIBUTE as fuae1_0
+        }
+      }
+    }
+
+2025-05-31 00:15:29,551 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:29,551 DEBUG [org.hibernate.SQL] (executor-thread-8) select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,551 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,551 DEBUG [org.hibernate.orm.results] (executor-thread-8) Initializer list:
+          org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr) -> EntityJoinedFetchInitializer(org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity(attr))@572972083 (SingleTableEntityPersister(org.keycloak.storage.jpa.entity.FederatedUserAttributeEntity))
+
+2025-05-31 00:15:29,552 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:29,552 DEBUG [org.hibernate.SQL] (executor-thread-8) select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,552 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,553 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:29,553 DEBUG [org.hibernate.SQL] (executor-thread-8) select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,553 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,554 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:29,554 DEBUG [org.hibernate.SQL] (executor-thread-8) select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,554 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,554 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:15:29,555 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:29,555 DEBUG [org.hibernate.SQL] (executor-thread-8) select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,555 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,555 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:29,555 DEBUG [org.hibernate.SQL] (executor-thread-8) select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,555 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,556 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-8) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 00:15:29,556 DEBUG [org.hibernate.SQL] (executor-thread-8) select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,556 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: select fuae1_0.ID,fuae1_0.LONG_VALUE,fuae1_0.LONG_VALUE_HASH,fuae1_0.LONG_VALUE_HASH_LOWER_CASE,fuae1_0.NAME,fuae1_0.REALM_ID,fuae1_0.STORAGE_PROVIDER_ID,fuae1_0.USER_ID,fuae1_0.VALUE from FED_USER_ATTRIBUTE fuae1_0 where fuae1_0.USER_ID=? and fuae1_0.REALM_ID=?
+2025-05-31 00:15:29,557 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: supportsCredentialType()...credentialType=password
+2025-05-31 00:15:29,557 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: isValid()...username=inmokang11
+2025-05-31 00:15:29,557 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: SELECT password, salt FROM users WHERE username = ?
+2025-05-31 00:15:29,562 DEBUG [com.nwc.PBKDF2Util] (executor-thread-8) PBKDF2Util: verifyPassword()...inputPassword=inmokang11, salt=h3G9JKslWw4LJvFxDaWx3A==
+2025-05-31 00:15:29,562 DEBUG [com.nwc.PBKDF2Util] (executor-thread-8) PBKDF2Util: hashPassword()...password=inmokang11, salt=h3G9JKslWw4LJvFxDaWx3A==
+2025-05-31 00:15:29,573 DEBUG [com.nwc.PBKDF2Util] (executor-thread-8) PBKDF2Util: verifyPassword()...inputHash=====doxuXxA+qiYOsv7xirMcZZT5ZdUSxtBlIBueQFQm3bw=
+2025-05-31 00:15:29,573 DEBUG [com.nwc.PBKDF2Util] (executor-thread-8) PBKDF2Util: verifyPassword()...expectedHash==doxuXxA+qiYOsv7xirMcZZT5ZdUSxtBlIBueQFQm3bw=
+2025-05-31 00:15:29,573 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) authenticator SUCCESS: auth-username-password-form
+2025-05-31 00:15:29,574 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) check execution: 'forms flow', requirement: 'ALTERNATIVE'
+2025-05-31 00:15:29,574 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) processFlow: forms
+2025-05-31 00:15:29,574 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) check execution: 'auth-username-password-form', requirement: 'REQUIRED'
+2025-05-31 00:15:29,574 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) execution 'auth-username-password-form' is processed
+2025-05-31 00:15:29,574 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: supportsCredentialType()...credentialType=otp
+2025-05-31 00:15:29,574 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 00:15:29,574 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) Flow 'forms flow' successfully finished
+2025-05-31 00:15:29,575 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) processFlow: browser
+2025-05-31 00:15:29,575 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-8) Authentication successful of the top flow 'browser'
+2025-05-31 00:15:29,575 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 00:15:29,575 WARN  [org.keycloak.services] (executor-thread-8) KC-SERVICES0013: Failed authentication: java.lang.IllegalStateException: Not found in database
+        at org.keycloak.models.cache.infinispan.UserAdapter.getDelegateForUpdate(UserAdapter.java:107)
+        at org.keycloak.models.cache.infinispan.UserAdapter.addRequiredAction(UserAdapter.java:250)
+        at org.keycloak.authentication.requiredactions.VerifyEmail.evaluateTriggers(VerifyEmail.java:52)
+        at org.keycloak.services.managers.AuthenticationManager.evaluateRequiredAction(AuthenticationManager.java:1463)
+        at org.keycloak.services.managers.AuthenticationManager.lambda$evaluateRequiredActionTriggers$19(AuthenticationManager.java:1434)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+        at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+        at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+        at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+        at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+        at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+        at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+        at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+        at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+        at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+        at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+        at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+        at org.keycloak.services.managers.AuthenticationManager.evaluateRequiredActionTriggers(AuthenticationManager.java:1434)
+        at org.keycloak.services.managers.AuthenticationManager.nextRequiredAction(AuthenticationManager.java:1077)
+        at org.keycloak.authentication.AuthenticationProcessor.nextRequiredAction(AuthenticationProcessor.java:1201)
+        at org.keycloak.authentication.AuthenticationProcessor.authenticationComplete(AuthenticationProcessor.java:1191)
+        at org.keycloak.authentication.AuthenticationProcessor.authenticationAction(AuthenticationProcessor.java:1047)
+        at org.keycloak.services.resources.LoginActionsService.processFlow(LoginActionsService.java:378)
+        at org.keycloak.services.resources.LoginActionsService.processAuthentication(LoginActionsService.java:349)
+        at org.keycloak.services.resources.LoginActionsService.authenticate(LoginActionsService.java:341)
+        at org.keycloak.services.resources.LoginActionsService.authenticateForm(LoginActionsService.java:407)
+        at org.keycloak.services.resources.LoginActionsService$quarkusrestinvoker$authenticateForm_13d428b70e62601585246c086a52f40868a3208e.invoke(Unknown Source)
+        at org.jboss.resteasy.reactive.server.handlers.InvocationHandler.handle(InvocationHandler.java:29)
+        at io.quarkus.resteasy.reactive.server.runtime.QuarkusResteasyReactiveRequestContext.invokeHandler(QuarkusResteasyReactiveRequestContext.java:141)
+        at org.jboss.resteasy.reactive.common.core.AbstractResteasyReactiveContext.run(AbstractResteasyReactiveContext.java:147)
+        at io.quarkus.vertx.core.runtime.VertxCoreRecorder$14.runWith(VertxCoreRecorder.java:635)
+        at org.jboss.threads.EnhancedQueueExecutor$Task.doRunWith(EnhancedQueueExecutor.java:2516)
+        at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2495)
+        at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1521)
+        at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:11)
+        at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:11)
+        at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+        at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-05-31 00:15:29,576 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) new JtaTransactionWrapper. Was existing transaction suspended: true Suspended transaction: TransactionImple < ac, BasicAction: 0:ffffc0a8f003:9dc7:683a47a7:125 status: ActionStatus.RUNNING >.  Request Context: Non-HTTP task
+2025-05-31 00:15:29,576 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) JtaTransactionWrapper  commit. Request Context: Non-HTTP task
+2025-05-31 00:15:29,576 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) JtaTransactionWrapper end. Request Context: Non-HTTP task
+2025-05-31 00:15:29,576 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) JtaTransactionWrapper resuming suspended user transaction: TransactionImple < ac, BasicAction: 0:ffffc0a8f003:9dc7:683a47a7:125 status: ActionStatus.RUNNING >
+2025-05-31 00:15:29,576 WARN  [org.keycloak.events] (executor-thread-8) type="LOGIN_ERROR", realmId="d5779a08-07ea-4ad1-885f-acd4b3643a7f", realmName="ROLE_TEST", clientId="role-test-site2", userId="null", ipAddress="172.30.1.254", error="invalid_user_credentials", auth_method="openid-connect", auth_type="code", redirect_uri="http://220.70.29.208:38085/login/oauth2/code/keycloak", code_id="0b98d2a4-e440-418c-a6d6-7a28a33b0fb2", username="inmokang11"
+2025-05-31 00:15:29,579 FINE  [freemarker.cache] (executor-thread-8) Couldn't find template in cache for "error.ftl"("en_US", UTF-8, parsed); will try to load it.
+2025-05-31 00:15:29,579 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("error_en_US.ftl"): Not found
+2025-05-31 00:15:29,579 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("error_en.ftl"): Not found
+2025-05-31 00:15:29,579 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("error.ftl"): Found
+2025-05-31 00:15:29,579 FINE  [freemarker.cache] (executor-thread-8) Loading template for "error.ftl"("en_US", UTF-8, parsed) from "jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/base/login/error.ftl"
+2025-05-31 00:15:29,581 FINE  [freemarker.cache] (executor-thread-8) Couldn't find template in cache for "template.ftl"("en_US", UTF-8, parsed); will try to load it.
+2025-05-31 00:15:29,581 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("template_en_US.ftl"): Not found
+2025-05-31 00:15:29,581 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("template_en.ftl"): Not found
+2025-05-31 00:15:29,581 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("template.ftl"): Found
+2025-05-31 00:15:29,581 FINE  [freemarker.cache] (executor-thread-8) Loading template for "template.ftl"("en_US", UTF-8, parsed) from "jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/keycloak.v2/login/template.ftl"
+2025-05-31 00:15:29,588 FINE  [freemarker.cache] (executor-thread-8) Couldn't find template in cache for "field.ftl"("en_US", UTF-8, parsed); will try to load it.
+2025-05-31 00:15:29,588 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("field_en_US.ftl"): Not found
+2025-05-31 00:15:29,588 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("field_en.ftl"): Not found
+2025-05-31 00:15:29,588 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("field.ftl"): Found
+2025-05-31 00:15:29,588 FINE  [freemarker.cache] (executor-thread-8) Loading template for "field.ftl"("en_US", UTF-8, parsed) from "jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/keycloak.v2/login/field.ftl"
+2025-05-31 00:15:29,591 FINE  [freemarker.cache] (executor-thread-8) Couldn't find template in cache for "footer.ftl"("en_US", UTF-8, parsed); will try to load it.
+2025-05-31 00:15:29,591 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("footer_en_US.ftl"): Not found
+2025-05-31 00:15:29,591 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("footer_en.ftl"): Not found
+2025-05-31 00:15:29,591 FINE  [freemarker.cache] (executor-thread-8) TemplateLoader.findTemplateSource("footer.ftl"): Found
+2025-05-31 00:15:29,591 FINE  [freemarker.cache] (executor-thread-8) Loading template for "footer.ftl"("en_US", UTF-8, parsed) from "jar:file:/opt/keycloak/lib/lib/main/org.keycloak.keycloak-themes-26.1.3.jar!/theme/base/login/footer.ftl"
+2025-05-31 00:15:29,610 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) JtaTransactionWrapper  commit. Request Context: HTTP POST /realms/ROLE_TEST/login-actions/authenticate
+2025-05-31 00:15:29,610 DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] (executor-thread-8) On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-31 00:15:29,610 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-8) Initiating JDBC connection release from beforeTransactionCompletion
+2025-05-31 00:15:29,610 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: COMMIT
+2025-05-31 00:15:29,611 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-8) execute query: set autocommit=1
+2025-05-31 00:15:29,611 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-8) System variable change:  autocommit = ON
+2025-05-31 00:15:29,611 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-8) Initiating JDBC connection release from afterTransaction
+2025-05-31 00:15:29,611 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-8) JtaTransactionWrapper end. Request Context: HTTP POST /realms/ROLE_TEST/login-actions/authenticate
+2025-05-31 00:15:29,617 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-8) DB 연결 종료됨
+2025-05-31 00:15:35,833 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] () execute query: SELECT address, name, ip, coord FROM `keycloak_db`.JGROUPS_PING WHERE cluster_name=?
+2025-05-31 00:15:35,834 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] () execute query: SHOW COLUMNS FROM `keycloak_db`.`JGROUPS_PING`
+2025-05-31 00:15:45,520 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) PeriodicRecovery: background thread Status <== SCANNING
+2025-05-31 00:15:45,520 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) PeriodicRecovery: background thread scanning
+2025-05-31 00:15:45,520 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) Periodic recovery first pass at Sat, 31 May 2025 00:15:45
+2025-05-31 00:15:45,520 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) AtomicActionRecoveryModule first pass
+2025-05-31 00:15:45,520 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) processing /StateManager/BasicAction/TwoPhaseCoordinator/AtomicAction transactions
+2025-05-31 00:15:45,521 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) Recovery module 'com.arjuna.ats.internal.arjuna.recovery.AtomicActionRecoveryModule@27626658' first pass processed
+2025-05-31 00:15:45,521 DEBUG [com.arjuna.ats.jta] (Periodic Recovery) XARecoveryModule state change IDLE->FIRST_PASS
+
+2025-05-31 00:15:45,521 DEBUG [com.arjuna.ats.jta] (Periodic Recovery) Local XARecoveryModule - first pass
+2025-05-31 00:15:45,521 DEBUG [com.arjuna.ats.jta] (Periodic Recovery) XARecoveryModule state change FIRST_PASS->BETWEEN_PASSES
+
+2025-05-31 00:15:45,521 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) Recovery module 'com.arjuna.ats.internal.jta.recovery.arjunacore.XARecoveryModule@3fb00111' first pass processed
+2025-05-31 00:15:54,448 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] () execute query: SELECT address, name, ip, coord FROM `keycloak_db`.JGROUPS_PING WHERE cluster_name=?
+2025-05-31 00:15:54,449 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] () execute query: SHOW COLUMNS FROM `keycloak_db`.`JGROUPS_PING`
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) Periodic recovery second pass at Sat, 31 May 2025 00:15:55
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) AtomicActionRecoveryModule second pass
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) Recovery module 'com.arjuna.ats.internal.arjuna.recovery.AtomicActionRecoveryModule@27626658' second pass processed
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.jta] (Periodic Recovery) XARecoveryModule state change BETWEEN_PASSES->SECOND_PASS
+
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.jta] (Periodic Recovery) Local XARecoveryModule - second pass
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.jta] (Periodic Recovery) Local XARecoveryModule.transactionInitiatedRecovery completed
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.jta] (Periodic Recovery) Local XARecoveryModule.resourceInitiatedRecovery completed
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.jta] (Periodic Recovery) XARecoveryModule state change SECOND_PASS->IDLE
+
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) Recovery module 'com.arjuna.ats.internal.jta.recovery.arjunacore.XARecoveryModule@3fb00111' second pass processed
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) PeriodicRecovery: background thread Status <== INACTIVE
+2025-05-31 00:15:55,522 DEBUG [com.arjuna.ats.arjuna] (Periodic Recovery) PeriodicRecovery: background thread backing off
+2025-05-31 00:16:29,103 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] () execute query: SELECT address, name, ip, coord FROM `keycloak_db`.JGROUPS_PING WHERE cluster_name=?
+2025-05-31 00:16:29,104 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] () execute query: SHOW COLUMNS FROM `keycloak_db`.`JGROUPS_PING`
+
+
+================> getUserById() 구현후... inmokang11
+
+
+hosu@hosu-ubuntu:~$ docker logs -f keycloak |grep com.nwc
+2025-05-31 00:31:31,739 DEBUG [com.nwc.MariaDBUserFederationProviderFactory] (main) MariaDBUserFederationProviderFactory: getId()...
+2025-05-31 00:31:31,739 DEBUG [com.nwc.MariaDBUserFederationProviderFactory] (main) MariaDBUserFederationProviderFactory: getId()...
+2025-05-31 00:32:01,239 DEBUG [com.nwc.MariaDBUserFederationProviderFactory] (executor-thread-1) MariaDBUserFederationProviderFactory: create()...
+2025-05-31 00:32:01,239 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: jdbcUrl=jdbc:mariadb://www.test.com:13306/new_testdb
+2025-05-31 00:32:01,239 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: dbUser==new_test
+2025-05-31 00:32:01,280 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,285 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,286 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,378 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,388 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: supportsCredentialType()...credentialType=password
+2025-05-31 00:32:01,389 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: isValid()...username=inmokang11
+2025-05-31 00:32:01,394 DEBUG [com.nwc.PBKDF2Util] (executor-thread-1) PBKDF2Util: verifyPassword()...inputPassword=inmokang11, salt=h3G9JKslWw4LJvFxDaWx3A==
+2025-05-31 00:32:01,395 DEBUG [com.nwc.PBKDF2Util] (executor-thread-1) PBKDF2Util: hashPassword()...password=inmokang11, salt=h3G9JKslWw4LJvFxDaWx3A==
+2025-05-31 00:32:01,408 DEBUG [com.nwc.PBKDF2Util] (executor-thread-1) PBKDF2Util: verifyPassword()...inputHash=====doxuXxA+qiYOsv7xirMcZZT5ZdUSxtBlIBueQFQm3bw=
+2025-05-31 00:32:01,409 DEBUG [com.nwc.PBKDF2Util] (executor-thread-1) PBKDF2Util: verifyPassword()...expectedHash==doxuXxA+qiYOsv7xirMcZZT5ZdUSxtBlIBueQFQm3bw=
+2025-05-31 00:32:01,409 DEBUG [com.nwc.PBKDF2Util] (executor-thread-1) PBKDF2Util: verifyPassword()...result========true
+2025-05-31 00:32:01,446 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: supportsCredentialType()...credentialType=otp
+2025-05-31 00:32:01,447 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 00:32:01,447 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,452 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,452 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,468 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 00:32:01,469 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,474 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,474 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,491 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,516 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,520 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,520 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,520 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,521 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,564 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) DB 연결 종료됨
+2025-05-31 00:32:01,579 DEBUG [com.nwc.MariaDBUserFederationProviderFactory] (executor-thread-1) MariaDBUserFederationProviderFactory: create()...
+2025-05-31 00:32:01,579 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: jdbcUrl=jdbc:mariadb://www.test.com:13306/new_testdb
+2025-05-31 00:32:01,579 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: dbUser==new_test
+2025-05-31 00:32:01,602 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 00:32:01,602 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,607 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,607 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,615 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,621 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 00:32:01,621 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,624 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,624 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,627 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,634 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,639 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,639 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,639 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,639 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,646 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 00:32:01,646 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,650 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,650 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,661 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 00:32:01,661 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,666 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,666 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,667 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,672 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,676 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,676 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,676 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,676 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,678 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,683 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 00:32:01,688 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 00:32:01,688 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,688 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,688 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,717 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,721 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 00:32:01,778 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-1) DB 연결 종료됨
+
+
+
+===== inmokang11 - login success
+
+
+
+2025-05-31 02:03:51,292 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) new JtaTransactionWrapper. Was existing transaction suspended: false Request Context: HTTP POST /realms/ROLE_TEST/login-actions/authenticate
+2025-05-31 02:03:51,294 DEBUG [org.keycloak.services.resources.SessionCodeChecks] (executor-thread-9) Will use client 'role-test-site2' in back-to-application link
+2025-05-31 02:03:51,296 DEBUG [org.keycloak.services.managers.AuthenticationSessionManager] (executor-thread-9) Found AUTH_SESSION_ID cookie with value NWJkOWQwMWYtMTYxMi00ZDllLWI1M2UtYmZjZTIzMjEzOGI3LnNTdjIzeGF3Z3F0M3RhR24wRGpTc0s5ZFozM3JwR0ZYdkVpa1YzYXVadlNHQ1FxR1RsekpRMUJMWjJYM1pTWVFHQU5ROWN4QlVVVENkOXpwc1RoUjNn.e887b60ed43a-302
+2025-05-31 02:03:51,297 DEBUG [org.keycloak.authentication.AuthenticationProcessor] (executor-thread-9) authenticationAction
+2025-05-31 02:03:51,297 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) processAction: 66cbc529-ac32-4bdf-81e9-f854b3fec761
+2025-05-31 02:03:51,297 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-9) Going through the flow 'browser' for adding executions
+2025-05-31 02:03:51,297 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-9) Going through the flow 'Organization' for adding executions
+2025-05-31 02:03:51,298 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-9) Going through the flow 'forms' for adding executions
+2025-05-31 02:03:51,298 DEBUG [org.keycloak.authentication.AuthenticationSelectionResolver] (executor-thread-9) Selections when trying execution 'auth-username-password-form' : [ authSelection - auth-username-password-form]
+2025-05-31 02:03:51,298 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) action: auth-username-password-form
+2025-05-31 02:03:51,298 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-9) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2025-05-31 02:03:51,298 DEBUG [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl] (executor-thread-9) Hibernate RegisteredSynchronization successfully registered with JTA platform
+2025-05-31 02:03:51,298 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-9) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+
+2025-05-31 02:03:51,298 DEBUG [org.hibernate.SQL] (executor-thread-9) select ue1_0.ID,ue1_0.CREATED_TIMESTAMP,ue1_0.EMAIL,ue1_0.EMAIL_CONSTRAINT,ue1_0.EMAIL_VERIFIED,ue1_0.ENABLED,ue1_0.FEDERATION_LINK,ue1_0.FIRST_NAME,ue1_0.LAST_NAME,ue1_0.NOT_BEFORE,ue1_0.REALM_ID,ue1_0.SERVICE_ACCOUNT_CLIENT_LINK,ue1_0.USERNAME from USER_ENTITY ue1_0 where ue1_0.USERNAME=? and ue1_0.REALM_ID=?
+2025-05-31 02:03:51,298 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: set autocommit=0
+2025-05-31 02:03:51,299 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-9) System variable change:  autocommit = OFF
+2025-05-31 02:03:51,299 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: select ue1_0.ID,ue1_0.CREATED_TIMESTAMP,ue1_0.EMAIL,ue1_0.EMAIL_CONSTRAINT,ue1_0.EMAIL_VERIFIED,ue1_0.ENABLED,ue1_0.FEDERATION_LINK,ue1_0.FIRST_NAME,ue1_0.LAST_NAME,ue1_0.NOT_BEFORE,ue1_0.REALM_ID,ue1_0.SERVICE_ACCOUNT_CLIENT_LINK,ue1_0.USERNAME from USER_ENTITY ue1_0 where ue1_0.USERNAME=? and ue1_0.REALM_ID=?
+
+2025-05-31 02:03:51,299 DEBUG [com.nwc.MariaDBUserFederationProviderFactory] (executor-thread-9) MariaDBUserFederationProviderFactory: create()...
+2025-05-31 02:03:51,299 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: jdbcUrl=jdbc:mariadb://www.test.com:13306/new_testdb
+2025-05-31 02:03:51,299 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: dbUser==new_test
+2025-05-31 02:03:51,331 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-9) Database change: is 'new_testdb'
+2025-05-31 02:03:51,331 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),time_zone='+00:00',NAMES utf8mb4
+2025-05-31 02:03:51,337 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-9) System variable change:  character_set_client = utf8mb4
+2025-05-31 02:03:51,337 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-9) System variable change:  character_set_connection = utf8mb4
+2025-05-31 02:03:51,337 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-9) System variable change:  character_set_results = utf8mb4
+2025-05-31 02:03:51,337 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-9) System variable change:  time_zone = +00:00
+
+2025-05-31 02:03:51,337 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 02:03:51,337 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: SELECT username, email, first_name, last_name FROM users WHERE username = ?
+2025-05-31 02:03:51,341 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 02:03:51,341 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 02:03:51,342 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: supportsCredentialType()...credentialType=password
+2025-05-31 02:03:51,342 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: isValid()...username=inmokang11
+2025-05-31 02:03:51,342 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: SELECT password, salt FROM users WHERE username = ?
+2025-05-31 02:03:51,346 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: verifyPassword()...inputPassword=inmokang11, salt=h3G9JKslWw4LJvFxDaWx3A==
+2025-05-31 02:03:51,346 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: hashPassword()...password=inmokang11, salt=h3G9JKslWw4LJvFxDaWx3A==
+2025-05-31 02:03:51,360 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: verifyPassword()...inputHash=====doxuXxA+qiYOsv7xirMcZZT5ZdUSxtBlIBueQFQm3bw=
+2025-05-31 02:03:51,360 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: verifyPassword()...expectedHash==doxuXxA+qiYOsv7xirMcZZT5ZdUSxtBlIBueQFQm3bw=
+2025-05-31 02:03:51,360 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: verifyPassword()...result========true
+2025-05-31 02:03:51,360 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) authenticator SUCCESS: auth-username-password-form
+2025-05-31 02:03:51,361 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) check execution: 'forms flow', requirement: 'ALTERNATIVE'
+2025-05-31 02:03:51,361 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) processFlow: forms
+2025-05-31 02:03:51,361 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) check execution: 'auth-username-password-form', requirement: 'REQUIRED'
+2025-05-31 02:03:51,361 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) execution 'auth-username-password-form' is processed
+
+2025-05-31 02:03:51,361 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: supportsCredentialType()...credentialType=otp
+2025-05-31 02:03:51,361 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 02:03:51,361 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 02:03:51,361 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: SELECT username, email, first_name, last_name FROM users WHERE username = ?
+2025-05-31 02:03:51,366 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 02:03:51,366 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+
+2025-05-31 02:03:51,366 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-9) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 02:03:51,366 DEBUG [org.hibernate.SQL] (executor-thread-9) select fuce1_0.ID,fuce1_0.CREATED_DATE,fuce1_0.CREDENTIAL_DATA,fuce1_0.PRIORITY,fuce1_0.REALM_ID,fuce1_0.SALT,fuce1_0.SECRET_DATA,fuce1_0.STORAGE_PROVIDER_ID,fuce1_0.TYPE,fuce1_0.USER_ID,fuce1_0.USER_LABEL from FED_USER_CREDENTIAL fuce1_0 where fuce1_0.USER_ID=? order by fuce1_0.PRIORITY
+2025-05-31 02:03:51,366 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: select fuce1_0.ID,fuce1_0.CREATED_DATE,fuce1_0.CREDENTIAL_DATA,fuce1_0.PRIORITY,fuce1_0.REALM_ID,fuce1_0.SALT,fuce1_0.SECRET_DATA,fuce1_0.STORAGE_PROVIDER_ID,fuce1_0.TYPE,fuce1_0.USER_ID,fuce1_0.USER_LABEL from FED_USER_CREDENTIAL fuce1_0 where fuce1_0.USER_ID=? order by fuce1_0.PRIORITY
+2025-05-31 02:03:51,367 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) Flow 'forms flow' successfully finished
+2025-05-31 02:03:51,367 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) processFlow: browser
+2025-05-31 02:03:51,367 DEBUG [org.keycloak.authentication.DefaultAuthenticationFlow] (executor-thread-9) Authentication successful of the top flow 'browser'
+2025-05-31 02:03:51,367 DEBUG [org.keycloak.userprofile.validator.ReadOnlyAttributeUnchangedValidator] (executor-thread-9) Attempt to edit denied for attribute 'EMAIL_VERIFIED' with pattern '(?i:^\QKERBEROS_PRINCIPAL\E$|^\QLDAP_ID\E$|^\QLDAP_ENTRY_DN\E$|^\QCREATED_TIMESTAMP\E$|^\QcreateTimestamp\E$|^\QmodifyTimestamp\E$|^\QuserCertificate\E$|^\Qsaml.persistent.name.id.for.\E.*$|^\QENABLED\E$|^\QEMAIL_VERIFIED\E$|^\QdisabledReason\E$)' of user 'inmokang11'
+2025-05-31 02:03:51,368 DEBUG [org.keycloak.services.managers.AuthenticationManager] (executor-thread-9) applicable required actions (sorted): []
+2025-05-31 02:03:51,368 DEBUG [org.keycloak.services.managers.AuthenticationManager] (executor-thread-9) Did not find applicable required action
+2025-05-31 02:03:51,368 DEBUG [org.keycloak.models.sessions.infinispan.changes.UserSessionPersistentChangelogBasedTransaction] (executor-thread-9) user-session not found in cache for sessionId=5bd9d01f-1612-4d9e-b53e-bfce232138b7 offline=false, loading from persister
+2025-05-31 02:03:51,368 DEBUG [org.hibernate.orm.sql.exec] (executor-thread-9) Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-31 02:03:51,368 DEBUG [org.hibernate.SQL] (executor-thread-9) select puse1_0.OFFLINE_FLAG,puse1_0.USER_SESSION_ID,puse1_0.BROKER_SESSION_ID,puse1_0.CREATED_ON,puse1_0.DATA,puse1_0.LAST_SESSION_REFRESH,puse1_0.REALM_ID,puse1_0.USER_ID,puse1_0.VERSION from OFFLINE_USER_SESSION puse1_0 where puse1_0.OFFLINE_FLAG=? and puse1_0.USER_SESSION_ID=? and puse1_0.REALM_ID=? and puse1_0.LAST_SESSION_REFRESH>=? limit ?
+2025-05-31 02:03:51,368 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: select puse1_0.OFFLINE_FLAG,puse1_0.USER_SESSION_ID,puse1_0.BROKER_SESSION_ID,puse1_0.CREATED_ON,puse1_0.DATA,puse1_0.LAST_SESSION_REFRESH,puse1_0.REALM_ID,puse1_0.USER_ID,puse1_0.VERSION from OFFLINE_USER_SESSION puse1_0 where puse1_0.OFFLINE_FLAG=? and puse1_0.USER_SESSION_ID=? and puse1_0.REALM_ID=? and puse1_0.LAST_SESSION_REFRESH>=? limit ?
+2025-05-31 02:03:51,369 DEBUG [org.keycloak.models.sessions.infinispan.changes.UserSessionPersistentChangelogBasedTransaction] (executor-thread-9) user-session not found in persister for sessionId=5bd9d01f-1612-4d9e-b53e-bfce232138b7 offline=false
+2025-05-31 02:03:51,371 DEBUG [org.keycloak.services.managers.AuthenticationSessionManager] (executor-thread-9) Removing root authSession '5bd9d01f-1612-4d9e-b53e-bfce232138b7'. Expire restart cookie: true
+2025-05-31 02:03:51,372 DEBUG [org.keycloak.services.managers.AuthenticationManager] (executor-thread-9) Could not find cookie: KEYCLOAK_SESSION
+2025-05-31 02:03:51,372 DEBUG [org.keycloak.services.managers.AuthenticationManager] (executor-thread-9) Could not find cookie: KEYCLOAK_IDENTITY
+2025-05-31 02:03:51,372 DEBUG [org.keycloak.protocol.oidc.OIDCLoginProtocol] (executor-thread-9) redirectAccessCode: state: pNNZkKuqChLojieKYOQ0cPJfNSTXTGfNckkP9duvr5o=
+2025-05-31 02:03:51,373 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) JtaTransactionWrapper  commit. Request Context: HTTP POST /realms/ROLE_TEST/login-actions/authenticate
+2025-05-31 02:03:51,373 DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] (executor-thread-9) On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-31 02:03:51,373 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-9) Initiating JDBC connection release from beforeTransactionCompletion
+2025-05-31 02:03:51,373 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: COMMIT
+2025-05-31 02:03:51,373 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (executor-thread-9) execute query: set autocommit=1
+2025-05-31 02:03:51,373 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (executor-thread-9) System variable change:  autocommit = ON
+2025-05-31 02:03:51,373 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-9) Initiating JDBC connection release from afterTransaction
+2025-05-31 02:03:51,373 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) JtaTransactionWrapper end. Request Context: HTTP POST /realms/ROLE_TEST/login-actions/authenticate
+2025-05-31 02:03:51,374 DEBUG [org.keycloak.events] (executor-thread-9) type="LOGIN", realmId="d5779a08-07ea-4ad1-885f-acd4b3643a7f", realmName="ROLE_TEST", clientId="role-test-site2", userId="f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11", sessionId="5bd9d01f-1612-4d9e-b53e-bfce232138b7", ipAddress="172.30.1.254", auth_method="openid-connect", auth_type="code", response_type="code", redirect_uri="http://220.70.29.208:38085/login/oauth2/code/keycloak", consent="no_consent_required", code_id="5bd9d01f-1612-4d9e-b53e-bfce232138b7", username="inmokang11", response_mode="query", authSessionParentId="5bd9d01f-1612-4d9e-b53e-bfce232138b7", authSessionTabId="nwdRTffZ-jU"
+2025-05-31 02:03:51,374 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) new JtaTransactionWrapper. Was existing transaction suspended: false Request Context: Non-HTTP task
+2025-05-31 02:03:51,374 DEBUG [org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Processing 1 deferred session updates.
+2025-05-31 02:03:51,374 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) new JtaTransactionWrapper. Was existing transaction suspended: true Suspended transaction: TransactionImple < ac, BasicAction: 0:ffffac120003:8877:683a4de5:26e status: ActionStatus.RUNNING >.  Request Context: Non-HTTP task
+2025-05-31 02:03:51,374 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2025-05-31 02:03:51,374 DEBUG [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Hibernate RegisteredSynchronization successfully registered with JTA platform
+2025-05-31 02:03:51,375 DEBUG [org.hibernate.event.internal.AbstractSaveEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Generated identifier: component[offline,userSessionId]{offline=0, userSessionId=5bd9d01f-1612-4d9e-b53e-bfce232138b7}, using strategy: org.hibernate.id.CompositeNestedGeneratedValueGenerator
+2025-05-31 02:03:51,375 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper  commit. Request Context: Non-HTTP task
+2025-05-31 02:03:51,375 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Processing flush-time cascades
+2025-05-31 02:03:51,375 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Dirty checking collections
+2025-05-31 02:03:51,375 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2025-05-31 02:03:51,375 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2025-05-31 02:03:51,375 DEBUG [org.hibernate.internal.util.EntityPrinter] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Listing entities:
+2025-05-31 02:03:51,375 DEBUG [org.hibernate.internal.util.EntityPrinter] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) org.keycloak.models.jpa.session.PersistentUserSessionEntity{realmId=d5779a08-07ea-4ad1-885f-acd4b3643a7f, data={"ipAddress":"172.30.1.254","authMethod":"openid-connect","rememberMe":false,"started":0,"notes":{"KC_DEVICE_NOTE":"eyJpcEFkZHJlc3MiOiIxNzIuMzAuMS4yNTQiLCJvcyI6IldpbmRvd3MiLCJvc1ZlcnNpb24iOiIxMCIsImJyb3dzZXIiOiJDaHJvbWUvMTM2LjAuMCIsImRldmljZSI6Ik90aGVyIiwibGFzdEFjY2VzcyI6MCwibW9iaWxlIjpmYWxzZX0=","AUTH_TIME":"1748657031","authenticators-completed":"{\"66cbc529-ac32-4bdf-81e9-f854b3fec761\":1748657031}"},"state":"LOGGED_IN"}, brokerSessionId=null, createdOn=1748657031, lastSessionRefresh=1748657031, userId=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11, version=0}
+2025-05-31 02:03:51,375 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: set autocommit=0
+2025-05-31 02:03:51,376 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) System variable change:  autocommit = OFF
+2025-05-31 02:03:51,376 DEBUG [org.hibernate.SQL] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) insert into OFFLINE_USER_SESSION (BROKER_SESSION_ID,CREATED_ON,DATA,LAST_SESSION_REFRESH,REALM_ID,USER_ID,VERSION,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,376 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: insert into OFFLINE_USER_SESSION (BROKER_SESSION_ID,CREATED_ON,DATA,LAST_SESSION_REFRESH,REALM_ID,USER_ID,VERSION,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,376 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_USER_SESSION (BROKER_SESSION_ID,CREATED_ON,DATA,LAST_SESSION_REFRESH,REALM_ID,USER_ID,VERSION,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,376 DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-31 02:03:51,376 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Initiating JDBC connection release from beforeTransactionCompletion
+2025-05-31 02:03:51,376 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_USER_SESSION (BROKER_SESSION_ID,CREATED_ON,DATA,LAST_SESSION_REFRESH,REALM_ID,USER_ID,VERSION,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,376 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: COMMIT
+2025-05-31 02:03:51,381 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: set autocommit=1
+2025-05-31 02:03:51,381 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) System variable change:  autocommit = ON
+2025-05-31 02:03:51,381 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_USER_SESSION (BROKER_SESSION_ID,CREATED_ON,DATA,LAST_SESSION_REFRESH,REALM_ID,USER_ID,VERSION,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,381 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Initiating JDBC connection release from afterTransaction
+2025-05-31 02:03:51,381 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper end. Request Context: Non-HTTP task
+2025-05-31 02:03:51,381 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper resuming suspended user transaction: TransactionImple < ac, BasicAction: 0:ffffac120003:8877:683a4de5:26e status: ActionStatus.RUNNING >
+2025-05-31 02:03:51,381 DEBUG [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) HHH000420: Closing un-released batch
+2025-05-31 02:03:51,381 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_USER_SESSION (BROKER_SESSION_ID,CREATED_ON,DATA,LAST_SESSION_REFRESH,REALM_ID,USER_ID,VERSION,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,381 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_USER_SESSION (BROKER_SESSION_ID,CREATED_ON,DATA,LAST_SESSION_REFRESH,REALM_ID,USER_ID,VERSION,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,381 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper  commit. Request Context: Non-HTTP task
+2025-05-31 02:03:51,381 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper end. Request Context: Non-HTTP task
+2025-05-31 02:03:51,381 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) new JtaTransactionWrapper. Was existing transaction suspended: false Request Context: Non-HTTP task
+2025-05-31 02:03:51,382 DEBUG [org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Processing 1 deferred session updates.
+2025-05-31 02:03:51,382 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) new JtaTransactionWrapper. Was existing transaction suspended: true Suspended transaction: TransactionImple < ac, BasicAction: 0:ffffac120003:8877:683a4de5:275 status: ActionStatus.RUNNING >.  Request Context: Non-HTTP task
+2025-05-31 02:03:51,382 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2025-05-31 02:03:51,382 DEBUG [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Hibernate RegisteredSynchronization successfully registered with JTA platform
+2025-05-31 02:03:51,382 DEBUG [org.hibernate.orm.loader.multi] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Batch fetching entity `org.keycloak.models.jpa.session.PersistentClientSessionEntity#PersistentClientSessionEntity$Key[userSessionId='5bd9d01f-1612-4d9e-b53e-bfce232138b7', clientId='d461971f-0180-4f65-8453-2f572f42a4ac', clientStorageProvider='local', externalClientId='local', offline='0']`
+2025-05-31 02:03:51,382 DEBUG [org.hibernate.orm.sql.exec] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-31 02:03:51,382 DEBUG [org.hibernate.SQL] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) select pcse1_0.CLIENT_ID,pcse1_0.CLIENT_STORAGE_PROVIDER,pcse1_0.EXTERNAL_CLIENT_ID,pcse1_0.OFFLINE_FLAG,pcse1_0.USER_SESSION_ID,pcse1_0.DATA,pcse1_0.TIMESTAMP,pcse1_0.VERSION from OFFLINE_CLIENT_SESSION pcse1_0 where (pcse1_0.CLIENT_ID,pcse1_0.CLIENT_STORAGE_PROVIDER,pcse1_0.EXTERNAL_CLIENT_ID,pcse1_0.OFFLINE_FLAG,pcse1_0.USER_SESSION_ID) in ((?,?,?,?,?))
+2025-05-31 02:03:51,382 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: set autocommit=0
+2025-05-31 02:03:51,383 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) System variable change:  autocommit = OFF
+2025-05-31 02:03:51,383 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: select pcse1_0.CLIENT_ID,pcse1_0.CLIENT_STORAGE_PROVIDER,pcse1_0.EXTERNAL_CLIENT_ID,pcse1_0.OFFLINE_FLAG,pcse1_0.USER_SESSION_ID,pcse1_0.DATA,pcse1_0.TIMESTAMP,pcse1_0.VERSION from OFFLINE_CLIENT_SESSION pcse1_0 where (pcse1_0.CLIENT_ID,pcse1_0.CLIENT_STORAGE_PROVIDER,pcse1_0.EXTERNAL_CLIENT_ID,pcse1_0.OFFLINE_FLAG,pcse1_0.USER_SESSION_ID) in ((?,?,?,?,?))
+2025-05-31 02:03:51,383 DEBUG [org.hibernate.event.internal.AbstractSaveEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Generated identifier: component[clientId,clientStorageProvider,externalClientId,offline,userSessionId]{offline=0, clientId=d461971f-0180-4f65-8453-2f572f42a4ac, clientStorageProvider=local, externalClientId=local, userSessionId=5bd9d01f-1612-4d9e-b53e-bfce232138b7}, using strategy: org.hibernate.id.CompositeNestedGeneratedValueGenerator
+2025-05-31 02:03:51,383 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper  commit. Request Context: Non-HTTP task
+2025-05-31 02:03:51,383 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Processing flush-time cascades
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Dirty checking collections
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.internal.util.EntityPrinter] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Listing entities:
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.internal.util.EntityPrinter] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) org.keycloak.models.jpa.session.PersistentClientSessionEntity{data={"authMethod":"openid-connect","redirectUri":"http://220.70.29.208:38085/login/oauth2/code/keycloak","notes":{"clientId":"d461971f-0180-4f65-8453-2f572f42a4ac","scope":"openid profile email","userSessionStartedAt":"1748657031","iss":"https://www.kingkongapps.kr:30000/realms/ROLE_TEST","startedAt":"1748657031","response_type":"code","level-of-authentication":"-1","redirect_uri":"http://220.70.29.208:38085/login/oauth2/code/keycloak","state":"pNNZkKuqChLojieKYOQ0cPJfNSTXTGfNckkP9duvr5o=","nonce":"BODmnObCHRTl8jXtjPqLuGHEdUXqHkhFR1L5WTKwrqI"}}, version=0, timestamp=1748657031}
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.SQL] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) insert into OFFLINE_CLIENT_SESSION (DATA,TIMESTAMP,VERSION,CLIENT_ID,CLIENT_STORAGE_PROVIDER,EXTERNAL_CLIENT_ID,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,384 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: insert into OFFLINE_CLIENT_SESSION (DATA,TIMESTAMP,VERSION,CLIENT_ID,CLIENT_STORAGE_PROVIDER,EXTERNAL_CLIENT_ID,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_CLIENT_SESSION (DATA,TIMESTAMP,VERSION,CLIENT_ID,CLIENT_STORAGE_PROVIDER,EXTERNAL_CLIENT_ID,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Initiating JDBC connection release from beforeTransactionCompletion
+2025-05-31 02:03:51,384 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_CLIENT_SESSION (DATA,TIMESTAMP,VERSION,CLIENT_ID,CLIENT_STORAGE_PROVIDER,EXTERNAL_CLIENT_ID,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,385 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: COMMIT
+2025-05-31 02:03:51,388 DEBUG [org.mariadb.jdbc.client.impl.StandardClient] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) execute query: set autocommit=1
+2025-05-31 02:03:51,388 DEBUG [org.mariadb.jdbc.message.server.OkPacket] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) System variable change:  autocommit = ON
+2025-05-31 02:03:51,388 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_CLIENT_SESSION (DATA,TIMESTAMP,VERSION,CLIENT_ID,CLIENT_STORAGE_PROVIDER,EXTERNAL_CLIENT_ID,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,388 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) Initiating JDBC connection release from afterTransaction
+2025-05-31 02:03:51,388 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper end. Request Context: Non-HTTP task
+2025-05-31 02:03:51,388 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper resuming suspended user transaction: TransactionImple < ac, BasicAction: 0:ffffac120003:8877:683a4de5:275 status: ActionStatus.RUNNING >
+2025-05-31 02:03:51,388 DEBUG [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) HHH000420: Closing un-released batch
+2025-05-31 02:03:51,388 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_CLIENT_SESSION (DATA,TIMESTAMP,VERSION,CLIENT_ID,CLIENT_STORAGE_PROVIDER,EXTERNAL_CLIENT_ID,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,388 DEBUG [org.hibernate.orm.jdbc.batch] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) PreparedStatementDetails did not contain PreparedStatement on #releaseStatements : insert into OFFLINE_CLIENT_SESSION (DATA,TIMESTAMP,VERSION,CLIENT_ID,CLIENT_STORAGE_PROVIDER,EXTERNAL_CLIENT_ID,OFFLINE_FLAG,USER_SESSION_ID) values (?,?,?,?,?,?,?,?)
+2025-05-31 02:03:51,388 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper  commit. Request Context: Non-HTTP task
+2025-05-31 02:03:51,388 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (org.keycloak.models.sessions.infinispan.changes.PersistentSessionsWorker$BatchWorker) JtaTransactionWrapper end. Request Context: Non-HTTP task
+2025-05-31 02:03:51,392 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) DB 연결 종료됨
+2025-05-31 02:03:51,435 DEBUG [jdk.event.security] (vert.x-eventloop-thread-1)  TLSHandshake: 172.30.1.254:43498, TLSv1.3, TLS_AES_256_GCM_SHA384, 0
+2025-05-31 02:03:51,435 DEBUG [io.netty.handler.ssl.SslHandler] (vert.x-eventloop-thread-1) [id: 0x159cc324, L:/172.18.0.3:8443 - R:/172.30.1.254:49112] HANDSHAKEN: protocol:TLSv1.3 cipher suite:TLS_AES_256_GCM_SHA384
+2025-05-31 02:03:51,437 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) new JtaTransactionWrapper. Was existing transaction suspended: false Request Context: HTTP POST /realms/ROLE_TEST/protocol/openid-connect/token
+2025-05-31 02:03:51,439 DEBUG [org.keycloak.authentication.AuthenticationProcessor] (executor-thread-9) AUTHENTICATE CLIENT
+2025-05-31 02:03:51,439 DEBUG [org.keycloak.authentication.ClientAuthenticationFlow] (executor-thread-9) client authenticator: client-secret
+2025-05-31 02:03:51,439 DEBUG [org.keycloak.authentication.ClientAuthenticationFlow] (executor-thread-9) client authenticator SUCCESS: client-secret
+2025-05-31 02:03:51,439 DEBUG [org.keycloak.authentication.ClientAuthenticationFlow] (executor-thread-9) Client role-test-site2 authenticated by client-secret
+2025-05-31 02:03:51,439 DEBUG [org.keycloak.models.sessions.infinispan.changes.UserSessionPersistentChangelogBasedTransaction] (executor-thread-9) user-session found in cache for sessionId=5bd9d01f-1612-4d9e-b53e-bfce232138b7 offline=false 1748657031
+2025-05-31 02:03:51,440 DEBUG [org.keycloak.models.sessions.infinispan.changes.ClientSessionPersistentChangelogBasedTransaction] (executor-thread-9) client-session found in cache for sessionId=b1973e1e-4a71-395e-903b-c020cd89dc54, offline=false
+2025-05-31 02:03:51,440 DEBUG [org.keycloak.models.sessions.infinispan.PersistentUserSessionProvider] (executor-thread-9) getUserSessionWithPredicate(5bd9d01f-1612-4d9e-b53e-bfce232138b7): found in local cache
+2025-05-31 02:03:51,449 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) JtaTransactionWrapper  commit. Request Context: HTTP POST /realms/ROLE_TEST/protocol/openid-connect/token
+2025-05-31 02:03:51,449 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) JtaTransactionWrapper end. Request Context: HTTP POST /realms/ROLE_TEST/protocol/openid-connect/token
+2025-05-31 02:03:51,449 DEBUG [org.keycloak.events] (executor-thread-9) type="CODE_TO_TOKEN", realmId="d5779a08-07ea-4ad1-885f-acd4b3643a7f", realmName="ROLE_TEST", clientId="role-test-site2", userId="f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11", sessionId="5bd9d01f-1612-4d9e-b53e-bfce232138b7", ipAddress="172.30.1.254", token_id="cbb25a55-cf6a-405b-9f6f-02fbd60c1596", grant_type="authorization_code", refresh_token_type="Refresh", scope="openid email profile", refresh_token_id="105ad0ab-3cb4-49db-8d25-f83c1b8f5b6b", code_id="5bd9d01f-1612-4d9e-b53e-bfce232138b7", client_auth_method="client-secret"
+2025-05-31 02:03:51,457 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) new JtaTransactionWrapper. Was existing transaction suspended: false Request Context: HTTP GET /realms/ROLE_TEST/protocol/openid-connect/userinfo
+2025-05-31 02:03:51,458 DEBUG [org.keycloak.models.sessions.infinispan.changes.UserSessionPersistentChangelogBasedTransaction] (executor-thread-9) user-session found in cache for sessionId=5bd9d01f-1612-4d9e-b53e-bfce232138b7 offline=false 1748657031
+2025-05-31 02:03:51,459 DEBUG [org.keycloak.models.sessions.infinispan.changes.ClientSessionPersistentChangelogBasedTransaction] (executor-thread-9) client-session found in cache for sessionId=b1973e1e-4a71-395e-903b-c020cd89dc54, offline=false
+2025-05-31 02:03:51,459 DEBUG [org.keycloak.models.sessions.infinispan.PersistentUserSessionProvider] (executor-thread-9) getUserSessionWithPredicate(5bd9d01f-1612-4d9e-b53e-bfce232138b7): found in local cache
+2025-05-31 02:03:51,460 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) JtaTransactionWrapper  commit. Request Context: HTTP GET /realms/ROLE_TEST/protocol/openid-connect/userinfo
+2025-05-31 02:03:51,460 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) JtaTransactionWrapper end. Request Context: HTTP GET /realms/ROLE_TEST/protocol/openid-connect/userinfo
+2025-05-31 02:03:51,460 DEBUG [org.keycloak.events] (executor-thread-9) type="USER_INFO_REQUEST", realmId="d5779a08-07ea-4ad1-885f-acd4b3643a7f", realmName="ROLE_TEST", clientId="role-test-site2", userId="f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11", sessionId="5bd9d01f-1612-4d9e-b53e-bfce232138b7", ipAddress="172.30.1.254", auth_method="validate_access_token", signature_required="false", username="inmokang11"
+2025-05-31 02:03:51,478 DEBUG [jdk.event.security] (vert.x-eventloop-thread-3)  TLSHandshake: 172.30.1.254:49120, TLSv1.3, TLS_AES_256_GCM_SHA384, 0
+2025-05-31 02:03:51,479 DEBUG [io.netty.handler.ssl.SslHandler] (vert.x-eventloop-thread-3) [id: 0x310d2ec5, L:/172.18.0.3:8443 - R:/172.30.1.254:49120] HANDSHAKEN: protocol:TLSv1.3 cipher suite:TLS_AES_256_GCM_SHA384
+2025-05-31 02:03:51,480 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) new JtaTransactionWrapper. Was existing transaction suspended: false Request Context: HTTP POST /realms/ROLE_TEST/protocol/openid-connect/token
+2025-05-31 02:03:51,482 DEBUG [org.keycloak.models.sessions.infinispan.changes.UserSessionPersistentChangelogBasedTransaction] (executor-thread-9) user-session found in cache for sessionId=5bd9d01f-1612-4d9e-b53e-bfce232138b7 offline=false 1748657031
+2025-05-31 02:03:51,483 DEBUG [org.keycloak.models.sessions.infinispan.changes.ClientSessionPersistentChangelogBasedTransaction] (executor-thread-9) client-session found in cache for sessionId=b1973e1e-4a71-395e-903b-c020cd89dc54, offline=false
+2025-05-31 02:03:51,484 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-9) `hibernate.connection.provider_disables_autocommit` was enabled.  This setting should only be enabled when you are certain that the Connections given to Hibernate by the ConnectionProvider have auto-commit disabled.  Enabling this setting when the Connections do not have auto-commit disabled will lead to Hibernate executing SQL operations outside of any JDBC/SQL transaction.
+2025-05-31 02:03:51,484 DEBUG [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl] (executor-thread-9) Hibernate RegisteredSynchronization successfully registered with JTA platform
+2025-05-31 02:03:51,484 DEBUG [org.keycloak.authorization.policy.provider.permission.ResourcePolicyProvider] (executor-thread-9) Resource policy Default Permission evaluating using parent class
+2025-05-31 02:03:51,488 DEBUG [org.keycloak.authorization.policy.provider.js.JSPolicyProvider] (executor-thread-9) JS Policy Default Policy evaluated to status PERMIT
+2025-05-31 02:03:51,488 DEBUG [org.keycloak.authorization.policy.provider.permission.AbstractPermissionProvider] (executor-thread-9) Policy Default Permission was evaluated with status PERMIT in UNANIMOUS mode after processing 1 associated policies: [org.keycloak.models.cache.infinispan.authorization.PolicyAdapter@ebfbb456]
+2025-05-31 02:03:51,488 DEBUG [org.keycloak.authorization.policy.provider.permission.ScopePolicyProvider] (executor-thread-9) Scope policy admin-READ-permission evaluating using parent class
+2025-05-31 02:03:51,489 DEBUG [org.keycloak.authorization.policy.provider.role.RolePolicyProvider] (executor-thread-9) policy admin-policy evaluated with status null on identity f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 02:03:51,489 DEBUG [org.keycloak.authorization.policy.provider.role.RolePolicyProvider] (executor-thread-9) policy user-policy evaluated with status null on identity f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 02:03:51,489 DEBUG [org.keycloak.authorization.policy.provider.permission.AbstractPermissionProvider] (executor-thread-9) Policy admin-READ-permission was evaluated with status DENY in AFFIRMATIVE mode after processing 2 associated policies: [org.keycloak.models.cache.infinispan.authorization.PolicyAdapter@7bd107b2, org.keycloak.models.cache.infinispan.authorization.PolicyAdapter@7a191c96]
+2025-05-31 02:03:51,489 DEBUG [org.keycloak.authorization.policy.provider.permission.ScopePolicyProvider] (executor-thread-9) Scope policy admin-permission evaluating using parent class
+2025-05-31 02:03:51,490 DEBUG [org.keycloak.authorization.policy.provider.permission.AbstractPermissionProvider] (executor-thread-9) Policy admin-permission was evaluated with status DENY in UNANIMOUS mode after processing 1 associated policies: [org.keycloak.models.cache.infinispan.authorization.PolicyAdapter@7bd107b2]
+2025-05-31 02:03:51,490 DEBUG [org.keycloak.authorization.policy.provider.permission.ScopePolicyProvider] (executor-thread-9) Scope policy user-permission evaluating using parent class
+2025-05-31 02:03:51,490 DEBUG [org.keycloak.authorization.policy.provider.role.RolePolicyProvider] (executor-thread-9) policy admin-policy evaluated with status null on identity f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 02:03:51,491 DEBUG [org.keycloak.authorization.policy.provider.role.RolePolicyProvider] (executor-thread-9) policy user-policy evaluated with status null on identity f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 02:03:51,491 DEBUG [org.keycloak.authorization.policy.provider.permission.AbstractPermissionProvider] (executor-thread-9) Policy user-permission was evaluated with status DENY in AFFIRMATIVE mode after processing 2 associated policies: [org.keycloak.models.cache.infinispan.authorization.PolicyAdapter@7bd107b2, org.keycloak.models.cache.infinispan.authorization.PolicyAdapter@7a191c96]
+2025-05-31 02:03:51,491 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) JtaTransactionWrapper  commit. Request Context: HTTP POST /realms/ROLE_TEST/protocol/openid-connect/token
+2025-05-31 02:03:51,492 DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl] (executor-thread-9) On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-31 02:03:51,492 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-9) Initiating JDBC connection release from beforeTransactionCompletion
+2025-05-31 02:03:51,492 DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl] (executor-thread-9) Initiating JDBC connection release from afterTransaction
+2025-05-31 02:03:51,492 DEBUG [org.keycloak.transaction.JtaTransactionWrapper] (executor-thread-9) JtaTransactionWrapper end. Request Context: HTTP POST /realms/ROLE_TEST/protocol/openid-connect/token
+2025-05-31 02:03:51,492 DEBUG [org.keycloak.events] (executor-thread-9) type="PERMISSION_TOKEN", realmId="d5779a08-07ea-4ad1-885f-acd4b3643a7f", realmName="ROLE_TEST", clientId="role-test-site2", userId="f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11", ipAddress="172.30.1.254", auth_method="oauth_credentials", audience="role-test-site2", grant_type="urn:ietf:params:oauth:grant-type:uma-ticket"
+
+
+
+
+
+2025-05-31 02:03:51,299 DEBUG [com.nwc.MariaDBUserFederationProviderFactory] (executor-thread-9) MariaDBUserFederationProviderFactory: create()...
+2025-05-31 02:03:51,299 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: jdbcUrl=jdbc:mariadb://www.test.com:13306/new_testdb
+2025-05-31 02:03:51,299 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: dbUser==new_test
+2025-05-31 02:03:51,337 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 02:03:51,341 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 02:03:51,341 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 02:03:51,342 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: supportsCredentialType()...credentialType=password
+2025-05-31 02:03:51,342 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: isValid()...username=inmokang11
+2025-05-31 02:03:51,346 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: verifyPassword()...inputPassword=inmokang11, salt=h3G9JKslWw4LJvFxDaWx3A==
+2025-05-31 02:03:51,346 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: hashPassword()...password=inmokang11, salt=h3G9JKslWw4LJvFxDaWx3A==
+2025-05-31 02:03:51,360 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: verifyPassword()...inputHash=====doxuXxA+qiYOsv7xirMcZZT5ZdUSxtBlIBueQFQm3bw=
+2025-05-31 02:03:51,360 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: verifyPassword()...expectedHash==doxuXxA+qiYOsv7xirMcZZT5ZdUSxtBlIBueQFQm3bw=
+2025-05-31 02:03:51,360 DEBUG [com.nwc.PBKDF2Util] (executor-thread-9) PBKDF2Util: verifyPassword()...result========true
+2025-05-31 02:03:51,361 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: supportsCredentialType()...credentialType=otp
+2025-05-31 02:03:51,361 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserById()...id=f:2cb33684-2f5a-4e54-920c-0acaf48053cd:inmokang11
+2025-05-31 02:03:51,361 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(1)...username=inmokang11
+2025-05-31 02:03:51,366 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(2)...username=inmokang11
+2025-05-31 02:03:51,366 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) MariaDBUserFederationProvider: getUserByUsername(3)...username=inmokang11
+2025-05-31 02:03:51,392 DEBUG [com.nwc.MariaDBUserFederationProvider] (executor-thread-9) DB 연결 종료됨
